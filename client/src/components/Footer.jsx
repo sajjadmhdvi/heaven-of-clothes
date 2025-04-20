@@ -12,9 +12,10 @@ import {
 	Flex,
 	Icon,
 } from '@chakra-ui/react';
-import { FaGithub, FaLinkedin, FaFacebook ,FaInstagram} from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
 // import { BsPhoneFlip } from 'react-icons/bs';
 import { GiClothes } from "react-icons/gi";
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => (
@@ -38,41 +39,54 @@ const Footer = () => (
 					<Stack direction='row' spacing='8'>
 						<Stack spacing='4' minW='36' flex='1'>
 							<Text fontSize='sm' fontWeight='semibold' color='subtle'>
-								Product
+								Client Services
 							</Text>
 							<Stack spacing='3' shouldWrapChildren>
-								<Button variant='link'>How it works</Button>
-								<Button variant='link'>Pricing</Button>
+								<Button variant='link'>FAQ</Button>
+								<Button variant='link'>Returns</Button>
+								<Button variant='link'>Payment</Button>
 							</Stack>
 						</Stack>
 						<Stack spacing='4' minW='36' flex='1'>
 							<Text fontSize='sm' fontWeight='semibold' color='subtle'>
-								Legal
+								About Us
 							</Text>
 							<Stack spacing='3' shouldWrapChildren>
-								<Button variant='link'>Privacy</Button>
+								<Button variant='link'>Privacy Policy</Button>
+								<Button variant='link'>Legal</Button>
+							</Stack>
+						</Stack>
+						<Stack spacing='4' minW='36' flex='1'>
+							<Text fontSize='sm' fontWeight='semibold' color='subtle'>
+								Latest Products
+							</Text>
+							<Stack spacing='3' shouldWrapChildren>
+								{/* <Button variant='link'>a</Button>
 								<Button variant='link'>Terms</Button>
-								<Button variant='link'>License</Button>
+								<Button variant='link'>License</Button> */}
+								<Link to={'/product/6800be27a9bdc165b3c467f3'}>Top Wear</Link>
+								<Link to={'/product/6800c096a9bdc165b3c4686a'}>Bottom Wear</Link>
+								<Link to={'/product/6800bde1a9bdc165b3c467e1'}>Shoe</Link>
 							</Stack>
 						</Stack>
 					</Stack>
-					<Stack spacing='4'>
+					{/* <Stack spacing='4'>
 						<Text fontSize='sm' fontWeight='semibold' color='subtle'>
 							Stay up to date
 						</Text>
 						<Stack spacing='4' direction={{ base: 'column', sm: 'row' }} maxW={{ lg: '360px' }}>
 							<Input placeholder='Enter your email' type='email' required />
-							<Button variant='primary' type='submit' flexShrink={0}>
+							<Button variant='primary' type='submit' flexShrink={0} onClick={}>
 								Subscribe
 							</Button>
 						</Stack>
-					</Stack>
+					</Stack> */}
 				</Stack>
 			</Stack>
 			<Divider />
 			<Stack pt='8' pb='12' justify='space-between' direction={{ base: 'column-reverse', md: 'row' }} align='center'>
 				<Text fontSize='sm' color='subtle'>
-					&copy; {new Date().getFullYear()} Heaven of Clothes, Inc. All rights reserved. Powered by Sajjad Mahdavi.
+					&copy; {new Date().getFullYear()} Heaven of Clothes, Inc. All rights reserved. Designed by Sajjad Mahdavi.
 				</Text>
 				<ButtonGroup variant='ghost'>
 					{/* <IconButton as='a' href='#' icon={<FaLinkedin fontSize='1.25rem' />} />

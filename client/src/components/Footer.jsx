@@ -56,19 +56,19 @@ const Footer = () => (
 								<Button variant='link'>Legal</Button>
 							</Stack>
 						</Stack>
-						<Stack spacing='4' minW='36' flex='1'>
+						{/* <Stack spacing='4' minW='36' flex='1'>
 							<Text fontSize='sm' fontWeight='semibold' color='subtle'>
 								Latest Products
 							</Text>
-							<Stack spacing='3' shouldWrapChildren>
+							<Stack spacing='3' shouldWrapChildren> */}
 								{/* <Button variant='link'>a</Button>
 								<Button variant='link'>Terms</Button>
 								<Button variant='link'>License</Button> */}
-								<Link to={'/product/6800be27a9bdc165b3c467f3'}>Top Wear</Link>
+								{/* <Link to={'/product/6800be27a9bdc165b3c467f3'}>Top Wear</Link>
 								<Link to={'/product/6800c096a9bdc165b3c4686a'}>Bottom Wear</Link>
 								<Link to={'/product/6800bde1a9bdc165b3c467e1'}>Shoe</Link>
 							</Stack>
-						</Stack>
+						</Stack> */}
 					</Stack>
 					{/* <Stack spacing='4'>
 						<Text fontSize='sm' fontWeight='semibold' color='subtle'>

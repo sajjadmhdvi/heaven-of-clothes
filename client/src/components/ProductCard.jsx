@@ -79,7 +79,7 @@ const ProductCard = ({ product, loading }) => {
 					</Text>
 				</Flex>
 				<Flex justify='space-between' mt='2'>
-					{favorites.includes(product._id) ? (
+					{/* {favorites.includes(product._id) ? (
 						<IconButton
 							icon={<MdOutlineFavorite size='20px' />}
 							colorScheme='cyan'
@@ -93,7 +93,7 @@ const ProductCard = ({ product, loading }) => {
 							size='sm'
 							onClick={() => dispatch(addToFavorites(product._id))}
 						/>
-					)}
+					)} */}
 
 					<IconButton
 						icon={<BiExpand size='20' />}

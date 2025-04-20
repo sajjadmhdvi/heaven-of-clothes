@@ -74,7 +74,7 @@ const Header = () => {
 
 	return (
 		<>
-			<Box bg={mode(`cyan.300`, 'gray.900')} px='4'>
+			<Box bg={mode(`cyan.300`, 'gray.900')} px='6'>
 				<Flex h='16' alignItems='center' justifyContent='space-between'>
 					<Flex display={{ base: 'flex', md: 'none' }} alignItems='center'>
 						<IconButton
@@ -100,7 +100,7 @@ const Header = () => {
 					<HStack spacing='8' alignItems='center'>
 						<Box alignItems='center' display='flex' as={ReactLink} to='/'>
 							<Icon as={GiClothes} h='6' w='6' color={mode('black', 'yellow.200')} />
-							<Text as='b'>Heaven of Clothes</Text>
+							<Text as='b'>HOC</Text>
 						</Box>
 
 						<HStack as='nav' spacing='4' display={{ base: 'none', md: 'flex' }}>
@@ -119,7 +119,7 @@ const Header = () => {
 							</Box>
 
 							<ColorModeToggle />
-							{favoritesToggled ? (
+							{/* {favoritesToggled ? (
 								<IconButton
 									onClick={() => dispatch(toggleFavorites(false))}
 									icon={<MdOutlineFavorite size='20px' />}
@@ -131,7 +131,7 @@ const Header = () => {
 									icon={<MdOutlineFavoriteBorder size='20px' />}
 									variant='ghost'
 								/>
-							)}
+							)} */}
 						</HStack>
 					</HStack>
 					<Flex alignItems='center'>
@@ -206,7 +206,7 @@ const Header = () => {
 									</NavLink>
 								))}
 							</Stack>
-							{favoritesToggled ? (
+							{/* {favoritesToggled ? (
 								<IconButton
 									onClick={() => dispatch(toggleFavorites(false))}
 									icon={<MdOutlineFavorite size='20px' />}
@@ -218,7 +218,7 @@ const Header = () => {
 									icon={<MdOutlineFavoriteBorder size='20px' />}
 									variant='ghost'
 								/>
-							)}
+							)} */}
 							<ColorModeToggle />
 						</Box>
 					)}

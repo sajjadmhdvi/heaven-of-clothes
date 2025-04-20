@@ -12,13 +12,13 @@ import {
 	Flex,
 	Icon,
 } from '@chakra-ui/react';
-import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook ,FaInstagram} from 'react-icons/fa';
 // import { BsPhoneFlip } from 'react-icons/bs';
 import { GiClothes } from "react-icons/gi";
 
 
 const Footer = () => (
-	<Box w='100%' bg={mode('cyan.300', 'gray.900')}>
+	<Box w='100%' bg={mode('cyan.300', 'gray.900')} px='6'>
 		<Container as='footer' maxW='7xl'>
 			<Stack
 				spacing='8'
@@ -72,12 +72,13 @@ const Footer = () => (
 			<Divider />
 			<Stack pt='8' pb='12' justify='space-between' direction={{ base: 'column-reverse', md: 'row' }} align='center'>
 				<Text fontSize='sm' color='subtle'>
-					&copy; {new Date().getFullYear()} Heaven of Clothes, Inc. All rights reserved.
+					&copy; {new Date().getFullYear()} Heaven of Clothes, Inc. All rights reserved. Powered by Sajjad Mahdavi.
 				</Text>
 				<ButtonGroup variant='ghost'>
-					<IconButton as='a' href='#' icon={<FaLinkedin fontSize='1.25rem' />} />
+					{/* <IconButton as='a' href='#' icon={<FaLinkedin fontSize='1.25rem' />} />
 					<IconButton as='a' href='#' icon={<FaGithub fontSize='1.25rem' />} />
-					<IconButton as='a' href='#' icon={<FaFacebook fontSize='1.25rem' />} />
+					<IconButton as='a' href='#' icon={<FaFacebook fontSize='1.25rem' />} /> */}
+					<IconButton as='a' href='#' icon={<FaInstagram fontSize='1.25rem' />} />
 				</ButtonGroup>
 			</Stack>
 		</Container>

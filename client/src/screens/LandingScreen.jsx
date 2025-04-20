@@ -18,8 +18,8 @@ import { GiClothes } from "react-icons/gi";
 
 
 const LandingScreen = () => (
-	<Box maxW='8xl' mx='auto' p={{ base: '0', lg: '12' }} minH='6xl'>
-		<Stack direction={{ base: 'column-reverse', lg: 'row' }} spacing={{ base: '0', lg: '20' }}>
+	<Box maxW='8xl' mx='auto' p={{ base: '0', lg: '12' }} paddingTop='20' fill='Background' >
+		{/* <Stack direction={{ base: 'column-reverse', lg: 'row' }} spacing={{ base: '0', lg: '20' }}> */}
 			<Box
 				width={{ lg: 'sm' }}
 				transform={{ base: 'translateY(-50%)', lg: 'none' }}
@@ -57,7 +57,7 @@ const LandingScreen = () => (
 					flex='1'
 				/>
 			</Flex> */}
-		</Stack>
+		{/* </Stack> */}
 	</Box>
 );
 
